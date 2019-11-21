@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 
 class Formulario extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { categoria: "" };
-  }
+  state = { categoria: "" };
 
   handleChange = e => {
     this.setState({ categoria: e.target.value }, () =>
